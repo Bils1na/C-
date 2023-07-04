@@ -96,9 +96,9 @@ void DeleteMin(int[,] matrix, int min_row, int min_column)
     }
 }
 
-System.Console.Write("Enter number rows >> ");
+System.Console.Write("Enter rows number >> ");
 int row = Convert.ToInt32(Console.ReadLine());
-System.Console.Write("Enter number columns >> ");
+System.Console.Write("Enter columns number >> ");
 int column = Convert.ToInt32(Console.ReadLine());
 int[,] matrix = new int[row, column];
 
