@@ -13,7 +13,7 @@ void FillMatrix(string[,] matrix)
     int length = matrix.GetLength(0);
     int num = 0;
     int counter = 1;
-    while(num < 2){
+    while(num < matrix.GetLength(0) / 2){
         for(int i = num;i < length - num - 1;i++)
         {
             if (counter < 10)
@@ -60,7 +60,10 @@ void FillMatrix(string[,] matrix)
         }
         num++;
     }
-    
+    if (matrix.GetLength(0) % 2 != 0)
+    {
+        matrix[matrix.GetLength(0) / 2, matrix.GetLength(1) / 2] = $"{counter}";
+    }
 }
 
 void PrintMatrix(string[,] matrix)
