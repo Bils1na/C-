@@ -19,7 +19,7 @@ void FillMatrix(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = rnd.Next(1, 7);
+            matrix[i, j] = rnd.Next(1, 10);
         }
     }
 }
